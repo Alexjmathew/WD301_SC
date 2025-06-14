@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
       <div className="flex justify-between items-center">
         <div className='flex flex-wrap justify-center items-center'>
           <Link to="/" className="flex items-center text-white text-3xl font-bold px-2">
-            Sports Live
+            Sports center
           </Link>
         </div>
         <div className="flex flex-wrap space-x-4 text-white text-lg items-center">
