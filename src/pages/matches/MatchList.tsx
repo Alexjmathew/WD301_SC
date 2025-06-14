@@ -59,8 +59,8 @@ const MatchList: React.FC = () => {
   return (
     <div>
       {location.pathname === '/matches' && <Navbar />}
-      <h1 className='bg-gray-800 text-white text-2xl font-bold flex justify-center p-2 rounded-lg m-2'>Match List</h1>
-      <div className="bg-yellow-200 rounded-lg p-4 m-2 shadow-md">
+      <h1 className='bg-indigo-800 text-white text-2xl font-bold flex justify-center p-2 rounded-lg m-2'>Match List</h1>
+      <div className="bg-amber-100 rounded-lg p-4 m-2 shadow-md">
         {location.pathname === '/matches' && <LiveMatches />}
         <div className="flex flex-wrap gap-4 mb-4 flex justify-center">
           {/* Create buttons for each sport */}
@@ -81,7 +81,7 @@ const MatchList: React.FC = () => {
               {/* Display match details */}
               {match.isRunning && (
                 <div className="flex absolute top-0 right-0 p-1 text-red-500 font-bold rounded-full">
-                  &#x25cf;Live
+                  ●Live
                 </div>
               )}
               <h2 className="text-2xl font-semibold mb-2">{match.sportName}</h2>
@@ -100,12 +100,12 @@ const MatchList: React.FC = () => {
       {/* Modal for selected match */}
       {selectedMatch && (
         <div className={`fixed top-0 left-0 w-full h-full overflow-y-auto flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300 ${isModalOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-          <div className="bg-gray-300 rounded p-6 max-w-2xl mx-auto my-8 max-h-full overflow-y-auto">
+          <div className="bg-gray-200 rounded p-6 max-w-2xl mx-auto my-8 max-h-full overflow-y-auto">
             <h2 className="text-2xl font-bold mb-2"><b><u>Match</u> - </b>{selectedMatch.name}</h2>
             <hr/>
             <ul className='flex justify-center'>
               {Object.entries(selectedMatch.score).map(([team, score]) => (
-                <li key={team} className="text-lg m-3">&#x25cf; {team} - {score}</li>
+                <li key={team} className="text-lg m-3">● {team} - {score}</li>
               ))}
             </ul>
             <p className="text-lg"><b>Location: </b> {selectedMatch.location}</p>
@@ -123,7 +123,6 @@ const MatchList: React.FC = () => {
           </div>
         </div>
       )}
-
     </div>
   );
 };
