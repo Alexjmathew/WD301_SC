@@ -36,7 +36,6 @@ const Navbar: React.FC = () => {
           <Link to="/home">Home</Link>
           <Link to="/articles">Articles</Link>
           <Link to="/matches">Matches</Link>
-          <Link to="/teams">Teams</Link>
           {isLoggedIn ? (
             <div className="relative inline-block group" tabIndex={0}>
               <button
