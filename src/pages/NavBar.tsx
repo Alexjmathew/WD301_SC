@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-blue-900 px-2 py-2">
+    <nav className="bg-blue-950 px-2 py-2">
       <div className="flex justify-between items-center">
         <div className='flex flex-wrap justify-center items-center'>
           <Link to="/" className="flex items-center text-white text-3xl font-bold px-2">
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
           {isLoggedIn && (
             <button
               onClick={togglePreferencesModal}
-              className="text-white hover:bg-gray-700 px-3 py-2 rounded-md focus:outline-none group-hover:bg-gray-700"
+              className="text-white hover:bg-red-600 px-3 py-2 rounded-md focus:outline-none group-hover:bg-red-600"
             >
               Preferences
             </button>
@@ -42,24 +42,24 @@ const Navbar: React.FC = () => {
               <button
                 onClick={toggleDropdown}
                 onBlur={() => setDropdownOpen(false)}
-                className={`text-white hover:bg-gray-700 px-3 py-2 rounded-md focus:outline-none group-hover:bg-gray-700 ${isDropdownOpen ? 'focus:ring focus:ring-gray-400' : ''}`}
+                className={`text-white hover:bg-red-600 px-3 py-2 rounded-md focus:outline-none group-hover:bg-red-600 ${isDropdownOpen ? 'focus:ring focus:ring-gray-400' : ''}`}
               >
                 <span>⌔</span>
               </button>
               <div
-                className={`origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-gray-50 ring-1 ring-black ring-opacity-5 focus:outline-none transition-all duration-300 ${isDropdownOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
+                className={`origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-red-50 ring-1 ring-black ring-opacity-5 focus:outline-none transition-all duration-300 ${isDropdownOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
               >
                 <div className="py-1 font-semibold">
                   <Link
                     to="/user"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-100"
                   >
                     My Profile
                   </Link>
                   <hr/>
                   <Link
                     to="/logout"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-100 focus:outline-none"
                   >
                     Logout
                   </Link>
@@ -68,10 +68,10 @@ const Navbar: React.FC = () => {
             </div>
           ) : (
             <>
-              <Link to="/signup" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md focus:outline-none group-hover:bg-gray-700">
+              <Link to="/signup" className="text-white hover:bg-red-600 px-3 py-2 rounded-md focus:outline-none group-hover:bg-red-600">
                 Sign Up
               </Link>
-              <Link to="/signin" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md focus:outline-none group-hover:bg-gray-700">
+              <Link to="/signin" className="text-white hover:bg-red-600 px-3 py-2 rounded-md focus:outline-none group-hover:bg-red-600">
                 Sign In
               </Link>
             </>
