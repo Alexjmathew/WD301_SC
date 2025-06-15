@@ -88,3 +88,7 @@ https://./screenshots/landing.png 	https://./screenshots/article-modal.png
 Trending news and live scores 	Detailed article view
 https://./screenshots/signin.png	https://./screenshots/preferences.png
 User authentication 	Customize your dashboard
+
+🚀 Try It Out
+
+Live Demo | Video Walkthrough
