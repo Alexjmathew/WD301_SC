@@ -125,7 +125,7 @@ If you have any questions or need help with the project:
 
 **🚀 Try It Out**
 - [Live Demo](https://captone.netlify.app/home)
-- [Video Walkthrough](https://youtube.com/watch?v=your-video-id](https://www.youtube.com/watch?v=ZVPJnDvWhRs))
+- [Video Walkthrough](https://www.youtube.com/watch?v=ZVPJnDvWhRs)
 
 ---
 
