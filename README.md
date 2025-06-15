@@ -88,7 +88,7 @@ The Sports News and Scores Dashboard is a modern web application built with Reac
 
 | Sign In | Preferences |
 |:---:|:---:|
-| ![Sign In](./screenshots/c.jpg) | ![Preferences](./screenshots/k.png) |
+| ![Sign In](./screenshots/c.jpg) | ![Preferences](./screenshots/k.jpg) |
 | *User authentication* | *Customize your dashboard* |
 
 ## 🔧 Configuration
