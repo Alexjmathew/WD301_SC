@@ -1,94 +1,141 @@
-Sports News and Scores Dashboard
+# Sports News and Scores Dashboard
 
-Overview
+A comprehensive React-based web application for sports enthusiasts to stay updated with the latest news, live scores, and personalized content.
 
-The Sports News and Scores Dashboard is a web application built with React as part of the Web Development 301 capstone project. It allows users to browse sports news, view live scores, filter articles by sport and team, and personalize their dashboard by setting preferences for favorite sports and teams. The app is designed to be user-friendly, responsive, and production-ready, catering to both sports enthusiasts and casual users.
+## 📋 Overview
 
-Features
+The Sports News and Scores Dashboard is a modern web application built with React as part of the Web Development 301 capstone project. It provides users with an intuitive platform to browse sports news, view live scores, filter content by sport and team, and personalize their dashboard experience. The application is designed to be user-friendly, responsive, and production-ready, catering to both dedicated sports enthusiasts and casual users.
 
-Core Features
+## ✨ Features
 
+### Core Features
 
+- **📰 Browse Sports News**: View a comprehensive list of articles with titles, summaries, and thumbnails. Click "Read More" to access the full article content in an interactive modal.
 
+- **🔍 Filter News Articles**: Seamlessly filter articles by sport using intuitive tabs, with dynamic updates that don't require page reloads.
 
+- **📊 View Live Scores**: Access real-time information about ongoing matches, including team names, current scores, and match status. Features a manual refresh button for instant score updates.
 
-Browse Sports News: View a list of articles with titles, summaries, and thumbnails. Click "Read More" to see the full article in a modal.
+- **👤 Personalize Dashboard**: Create an account, sign in securely, and set preferences for favorite sports and teams to receive tailored news and scores that match your interests.
 
+### Optional Features (Planned)
 
+- 💾 Save favorite articles and matches for quick access
+- 🔐 Allow users to change their account passwords
+- 📱 Push notifications for favorite teams
+- 📈 Sports statistics and analytics
 
-Filter News Articles: Filter articles by sport using tabs, with dynamic updates without page reload.
+## 🎨 User Interface
 
+### Landing Screen
+- Clean navigation bar displaying the app name
+- Prominent sign-in/sign-up links for easy access
+- Live scores section showing the last 5 matches
+- Trending news section with organized sport tabs
 
+### Authentication Pages
+- Dedicated sign-in and sign-up pages accessible via the navigation bar
+- Secure user authentication with form validation
+- Clean, modern design consistent with the overall app theme
 
-View Live Scores: See ongoing matches with team names, scores, and status. Includes a manual refresh button for updating scores.
+### Article Detail View
+- Full-screen modal displaying complete article content
+- High-quality images and optimized typography
+- Smooth transitions and user-friendly navigation
 
+### Preferences Screen
+- Modal interface for logged-in users
+- Easy selection of favorite sports and teams
+- Real-time preview of personalized content
 
+### Responsive Design
+- Fully responsive layout that adapts to different screen sizes
+- Optimized for desktop, tablet, and mobile devices
+- Consistent user experience across all platforms
 
-Personalize Dashboard: Create an account, sign in, and set preferences for favorite sports and teams to receive tailored news and scores.
+## 🛠 Tech Stack
 
-Optional Features
+### Frontend
+- **React**: Modern JavaScript library for building user interfaces
+- **React Router**: Client-side routing for seamless navigation
+- **CSS Modules**: Modular styling approach for component-specific styles
+- **React Context**: State management for authentication and user preferences
 
+### Backend Integration
+- **WD301 Capstone API**: Integration with provided API endpoints for:
+  - Articles management
+  - Match data and live scores
+  - Sports and teams information
+  - User authentication and management
 
+### Performance Optimizations
+- **Code Splitting**: Implements React.lazy for optimal bundle sizes
+- **Lazy Loading**: Components loaded on-demand for improved performance
+- **Responsive Images**: Optimized image loading and display
 
+## 🚀 Getting Started
 
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn package manager
+- Modern web browser
 
-Save favorite articles and matches (planned).
 
 
 
-Allow users to change their account passwords (planned).
+## 📸 Screenshots
 
-User Interface
+| Landing Page | Article Modal |
+|:---:|:---:|
+| ![Landing Page](./screenshots/landing.png) | ![Article Modal](./screenshots/article-modal.png) |
+| *Trending news and live scores* | *Detailed article view* |
 
+| Sign In | Preferences |
+|:---:|:---:|
+| ![Sign In](./screenshots/signin.png) | ![Preferences](./screenshots/preferences.png) |
+| *User authentication* | *Customize your dashboard* |
 
+## 🔧 Configuration
 
+### API Integration
+The application integrates with the WD301 Capstone API. Configure the following endpoints in your environment variables:
 
+```env
+REACT_APP_API_BASE_URL=your_api_base_url
+REACT_APP_API_KEY=your_api_key
+```
 
-Landing Screen: Displays the app name in the navigation bar, sign-in/sign-up links, live scores (last 5 matches), and trending news with sport tabs.
+### Available API Endpoints
+- `/api/articles` - Fetch sports articles
+- `/api/matches` - Get live scores and match data
+- `/api/sports` - Retrieve sports categories
+- `/api/teams` - Access team information
+- `/api/auth` - User authentication endpoints
 
 
+## 🤝 Contributing
 
-Sign-in/Sign-up Pages: Accessible via the navigation bar for user authentication.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 
+## 📞 Support
 
-Detailed Article View: Opens in a modal with the full article content and image.
+If you have any questions or need help with the project:
 
+- 📧 Email: your.email@example.com
+- 💬 Issues: [GitHub Issues](https://github.com/yourusername/sports-dashboard/issues)
 
 
-Preferences Screen: Modal for logged-in users to set favorite sports and teams.
+---
 
+**🚀 Try It Out**
+- [Live Demo](https://your-sports-dashboard.netlify.app)
+- [Video Walkthrough](https://youtube.com/watch?v=your-video-id)
 
+---
 
-Responsive Design: Adapts to different screen sizes and devices for a consistent user experience.
-
-Tech Stack
-
-
-
-
-
-Frontend: React, React Router, CSS (with modular styles for each component)
-
-
-
-API: Integrates with the provided WD301 Capstone API endpoints for articles, matches, sports, teams, and user management
-
-
-
-State Management: React Context for authentication and user preferences
-
-
-
-Performance: Code splitting with React.lazy and lazy loading of components
-
-
-📸 Screenshots
-https://./screenshots/landing.png 	https://./screenshots/article-modal.png
-Trending news and live scores 	Detailed article view
-https://./screenshots/signin.png	https://./screenshots/preferences.png
-User authentication 	Customize your dashboard
-
-🚀 Try It Out
-
-Live Demo | Video Walkthrough
+*Built with ❤️ for sports enthusiasts everywhere*
