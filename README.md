@@ -87,7 +87,7 @@ The Sports News and Scores Dashboard is a modern web application built with Reac
 
 | Landing Page | Article Modal |
 |:---:|:---:|
-| ![Landing Page](./screenshots/Screenshot2025-06-15084929.jpg) | ![Article Modal](./screenshots/article-modal.png) |
+| ![Landing Page](./screenshots/a.jpg) | ![Article Modal](./screenshots/article-modal.png) |
 | *Trending news and live scores* | *Detailed article view* |
 
 | Sign In | Preferences |
