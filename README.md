@@ -75,10 +75,6 @@ The Sports News and Scores Dashboard is a modern web application built with Reac
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn package manager
-- Modern web browser
 
 
 
@@ -100,10 +96,6 @@ The Sports News and Scores Dashboard is a modern web application built with Reac
 ### API Integration
 The application integrates with the WD301 Capstone API. Configure the following endpoints in your environment variables:
 
-```env
-REACT_APP_API_BASE_URL=your_api_base_url
-REACT_APP_API_KEY=your_api_key
-```
 
 ### Available API Endpoints
 - `/api/articles` - Fetch sports articles
@@ -126,8 +118,7 @@ REACT_APP_API_KEY=your_api_key
 
 If you have any questions or need help with the project:
 
-- 📧 Email: your.email@example.com
-- 💬 Issues: [GitHub Issues](https://github.com/yourusername/sports-dashboard/issues)
+- 📧 Email: alexjmt1@gmail.com
 
 
 ---
